@@ -1,0 +1,72 @@
+html, body {
+    height:100%;
+}
+.bark {
+    display: inline-block;
+    width: 9%;
+    height: 100%;
+    background-image: url("../img/barkTile.png");
+    background-repeat: repeat-y;
+    background-position: left;
+}
+
+.page {
+    display: inline-block;
+    background-color: #f4f4f4;
+    width: 91%;
+    margin-left: -4px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.navbar .container {
+    width: 100%; 
+}
+
+.navbar {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar-default {
+    color: black;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+.navbar-brand {
+    padding:0;
+    height: auto;
+    margin-top: 10px;
+    color: black;
+}
+
+.brand-text {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 300px;
+    overflow: hidden;
+    height: auto;
+    font-size: 1.8em;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.navbar-collapse {
+    display: inline-block;
+}
+
+.navbar-nav {
+    float: right;
+    margin-right: 80px;
+    margin-top: 60px;
+    font-size: 1.8em;
+}
+
+.navbar-nav a {
+    margin-right: 35px;
+}
