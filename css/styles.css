@@ -68,13 +68,63 @@ container .navbar-brand {
 .navbar-nav {
     float: right;
     margin-right: 80px;
-    margin-top: 60px;
+    margin-top: 40px;
     font-size: 1.8em;
 }
 
 .navbar-nav a {
     margin-right: 35px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
+
+.navbar-nav a::before, .navbar-nav a::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: transparent;
+    content: '';
+    opacity: 0;
+    transition: top 0.5s, bottom 0.5s, opacity 0.5s;
+}
+
+.navbar-nav a::before {
+    top: 0;
+}
+
+.navbar-nav a::after {
+    bottom: 0;
+}
+
+.navbar-nav a:hover::before {
+    top: 10px;
+    background: black;
+    opacity: 1.0;
+}
+
+.navbar-nav a:hover::after {
+    bottom: 10px;
+    background: black;
+    opacity: 1.0;
+}
+
+#home:hover::before, #home:hover::after,
+#contact:hover::before, #contact:hover::after {
+    background: #DF5A49;
+}
+
+#about:hover::before, #about:hover::after {
+    background: #6DC27B;
+}
+
+#parents:hover::before, #parents:hover::after {
+    background: #ffe746;
+}
+
 
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
 	margin-left: 10px;
@@ -117,11 +167,12 @@ container .navbar-brand {
 .mission-area {
     width: 100%;
     height: 600px;
-    
+    position: relative;
 }
 
 .mission-text {
     display: inline-block;
+    float: left;
     margin-left: 5%;
     width: 500px;
     padding: 50px;
@@ -149,11 +200,41 @@ container .navbar-brand {
     line-height: 1.5;
 }
 
+
+.mission-area span {
+    left: 75px;
+    top: 275px;
+    float: left;
+}
+
+.mission-area span::before {
+    position: absolute;
+    content: "";
+    width: 65px;
+    height: 2px;
+    background-color: black;
+    top: 15px;
+    left: -70px;
+}
+
+.mission-area span::after {
+    position: absolute;
+    content: "";
+    width: 65px;
+    height: 2px;
+    background-color: black;
+    bottom: 20px;
+    left: 40px;
+    
+}
+
+
+
 .mission-pic {
     display: inline-block;
-    float: right;
-    margin-top: 50px;
-    margin-right: 10%;
+    float: left;
+    margin-top: 70px;
+    margin-left: 150px;
     width: 348px;
     height: 465px;
     background-image: url("../img/kids.png");
@@ -162,12 +243,59 @@ container .navbar-brand {
     background-size: cover;
 }
 
+.quote-area {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    height: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+    border-left: solid 15px #fce658;
+    border-right: solid 6px #fce658;
+}
+
+.quote {
+    display: inline-block;
+    width: 60%;
+}
+
+.quote::before {
+    content: "\201C";
+    position: absolute;
+    font-family: Georgia, serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #999;
+    left: 200px;
+}
+
+.quote::after {
+    content: "\201D";
+    position: absolute;
+    font-family: Georgia, serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #999;
+    right: 200px;
+    bottom: 100px;
+    
+}
+
+.quote h1 {
+    font-family: 'PT Serif', serif;
+}
+
+.quote h2 {
+    font-family: 'PT Serif', serif;
+}
+
 .info-area {
     height: auto;
     width: 100%;
     margin-top: 10px;
     text-align: center;
-    background-color: white;
+    
     padding-bottom: 40px;
 }
 
