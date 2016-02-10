@@ -1,30 +1,25 @@
 html, body {
     height:100%;
 }
-.bark {
-    display: inline-block;
-    width: 9%;
-    height: 100%;
-    background-image: url("../img/barkTile.png");
-    background-repeat: repeat-y;
-    background-position: left;
-}
 
-.page {
-    display: inline-block;
+body {
     background-color: #f4f4f4;
-    width: 91%;
-    margin-left: -4px;
-    height: 100%;
-    overflow: hidden;
+    
+    
 }
 
 .navbar .container {
     width: 100%; 
+    margin-left: 0;
+}
+
+.navbar > .container {
+    margin-left: 0;
 }
 
 .navbar {
     margin-bottom: 0;
+    margin-left: 0;
     padding-bottom: 10px;
     background-color: #ffffff;
     font-family: 'Lato', sans-serif;
@@ -38,15 +33,25 @@ html, body {
     color: black;
 }
 
+container .navbar-brand {
+    margin-left: 10px;
+}
+
+.navbar.container {
+    margin-left: 0;
+}
+
 .navbar-brand {
     padding:0;
     height: auto;
     margin-top: 10px;
     color: black;
+    margin-left: 0;
 }
 
 .brand-text {
-    margin-top: 10px;
+    display: inline-block;
+    margin-top: 20px;
     margin-left: 10px;
     width: 300px;
     overflow: hidden;
@@ -69,4 +74,199 @@ html, body {
 
 .navbar-nav a {
     margin-right: 35px;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+	margin-left: 10px;
+}
+
+.front-pic {
+    width: 100%;
+    border: solid 10px #DF5A49;
+    border-top: none;
+    border-bottom-width: 20px;
+    height: 480px;
+    background-image: url("../img/front2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.front-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.17);
+}
+
+.front-overlay .front-text {
+    display: inline-block;
+    margin-left: 25%;
+    margin-top: 50px;
+    width: 800px;
+    font-family: "Lato", sans-serif;
+}
+
+.front-overlay .front-text h1 {
+    margin: 0;
+    color: white;
+    font-size: 4.2em;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px black;
+}
+
+.mission-area {
+    width: 100%;
+    height: 600px;
+    
+}
+
+.mission-text {
+    display: inline-block;
+    margin-left: 5%;
+    width: 500px;
+    padding: 50px;
+    margin-top: 50px;
+    font-family: "Lato", sans-serif;
+    background-color: #6DC27B;
+    color: white;
+}
+
+.mission-text hr {
+    border-width: 3px;
+    border-color: #EFDB56;
+    width: 75%;
+    margin-left: 0;
+}
+
+.mission-text h2 {
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+.mission-text h3 {
+    font-size: 2.0em;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.mission-pic {
+    display: inline-block;
+    float: right;
+    margin-top: 50px;
+    margin-right: 10%;
+    width: 348px;
+    height: 465px;
+    background-image: url("../img/kids.png");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+}
+
+.info-area {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 40px;
+}
+
+.info-contain {
+    display: inline-block;
+    width: 90%;
+    padding: 10px;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.info-header {
+    
+    margin-bottom: 50px;
+    text-align: left;
+    padding-left: 70px;
+
+}
+
+.info-header h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 2.6em;
+    font-weight: 700;
+}
+
+.box-area {
+    display: inline-block;
+    height: 100%;
+}
+
+.box {
+    display: inline-block;
+    width: 335px;
+    height: 400px;
+    margin: 5px;
+    border: solid 15px #7b7b7b;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.box-bottom {
+    position: absolute;
+    height: 50px;
+    bottom: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.47);
+    color: white;
+    font-weight: 300;
+    transition: color 0.5s;
+    transition: bottom 0.5s;
+}
+
+.box:hover .box-bottom {
+    bottom: 150px;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+.box-bottom h3 {
+    position: relative;
+    bottom: 7px;
+}
+
+.box-1 {
+    background-image: url("../img/b1.png");
+    border-color: #6DC27B;
+}
+
+.box-1:hover .box-bottom {
+    color: #6DC27B;
+}
+
+.box-2 {
+    background-image: url("../img/b2.png");
+    border-color: #EFDB56;
+}
+
+.box-2:hover .box-bottom {
+    color: #EFDB56;
+}
+
+.box-3 {
+    background-image: url("../img/b3.png");
+    border-color: #DF5A49;
+}
+
+.box-3:hover .box-bottom {
+    color: #DF5A49;
+}
+
+.box-ol {
+    background-color: rgba(51, 77, 92, 0.05);
+    width: 100%;
+    height: 100%;
+    transition: background-color 1s;
+}
+
+.box-ol:hover {
+    background-color: rgba(0, 0, 0, 0.4);
 }
