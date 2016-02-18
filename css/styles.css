@@ -357,7 +357,29 @@ container .navbar-brand {
     color: #333333;
     background-color: rgba(255, 255, 255, 0.69);
     text-shadow: none;
-   
+}
+
+@media screen and (max-width:1100px) {
+    .front-overlay .front-text {
+        width: 100%;
+        margin: 0;
+        margin-top: 30px;
+    }
+    
+    .front-overlay .front-text h1 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (max-width:558px) {
+    .front-o2 {
+        height: 160px;
+    }
+    
+    .front-text-2 h3, .front-text-2 a {
+        line-height: 50px;
+    }
 }
 
 .mission-area {
