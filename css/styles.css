@@ -781,14 +781,12 @@ container .navbar-brand {
     }
 }
 
-
 .blog-section {
     width: 100%;
     height: 600px;
-/*    background-color: #E2E2E2;*/
     padding-top: 50px;
     border-top: solid 1px rgba(128, 128, 128, 0.43);
-    background: linear-gradient(135deg, #cecece,white );
+    background: linear-gradient(135deg, #cecece, white);
 }
 
 .blog-section h1 {
@@ -808,6 +806,14 @@ container .navbar-brand {
     position: relative;
     top: -35px;
     left: 13%;
+}
+
+@media screen and (max-width:1040px) {
+    .blog-section hr {
+        top: 0px;
+        left: 7%;
+        width: 60%;
+    }
 }
 
 .footer {
